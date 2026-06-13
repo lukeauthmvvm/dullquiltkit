@@ -1,4 +1,4 @@
-# WorkerFactory-465c01
+# WorkerFactory-f69a46
 
 A Java WorkerFactory utility.
 
